@@ -4,6 +4,18 @@
 \usepackage{bibentry}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage{etaremune}
+
+\newenvironment{benumerate}[1]{
+	\let\oldItem\item
+	\def\item{\addtocounter{enumi}{-2}\oldItem}
+	\begin{enumerate}
+		\setcounter{enumi}{#1}
+		\addtocounter{enumi}{1}
+	}{
+	\end{enumerate}
+}
+
 
 
 \newcommand{\CC}{\mathbf{C}}
@@ -66,7 +78,7 @@ Specific: Deformation Theory, Diophantine Geometry, Differential Algebra and Wit
 \section*{Research Activities}
 
 \subsection*{Publications}
-\begin{enumerate}
+\begin{benumerate}{17}
 	\item \bibentry{Dupuy2023}
 	\item  \bibentry{Dupuy2022a} 
 	\item  \bibentry{Dupuy2020b}
@@ -79,17 +91,20 @@ Specific: Deformation Theory, Diophantine Geometry, Differential Algebra and Wit
 	\item \bibentry{Dupuy2016}
 	\item \bibentry{Dupuy2014a}
 	\item \bibentry{Dupuy2014}
-\end{enumerate}
+\end{benumerate}
 
 \subsection*{Preprints}
-\begin{enumerate}[resume]
+\begin{benumerate}{5}   %[resume]
 	\item \bibentry{Dupuy2023a}
+	\item  \bibentry{Dupuy2017} 
+	\item  \bibentry{Dupuy2023b}
+\end{benumerate}
+
+\subsection*{ABC Conjecture Preprints}
+\begin{benumerate}{2} %[resume]
 	\item \bibentry{Dupuy2020a}
 	\item \bibentry{Dupuy2020} 
-	\item  \bibentry{Dupuy2017} 
-	\item  \bibentry{Dupuy2017a}
-\end{enumerate}
-
+\end{benumerate}
 
 
 \subsection*{Honors and Awards}
@@ -175,11 +190,11 @@ Specific: Deformation Theory, Diophantine Geometry, Differential Algebra and Wit
 
 \subsection*{Other Academic Products}
 \begin{enumerate}
-	\item YouTube: 261K views, 14K hours viewed, 3.5K subscribers
+	\item YouTube: 293.3K views, 15.7K hours viewed, 3.89K subscribers
 	\begin{center}
 		 \url{https://www.youtube.com/channel/UCHWnZ1NtJ4WvE5AHmNVXziw/}
 	\end{center}
-	\item LMFDB contributor: database of isogeny classes of abelian varieties over finite fields.\footnote{Isomorphism classes is in progress with Stefano Marseglia, Edgar Costa, and David Roe}
+	\item LMFDB contributor: database of isogeny classes of abelian varieties over finite fields.
 	 \begin{center}
 	 	\url{http://lmfdb.xyz/Variety/Abelian/Fq/}
 	 \end{center}
@@ -225,7 +240,7 @@ Specific: Deformation Theory, Diophantine Geometry, Differential Algebra and Wit
 \end{enumerate}
 
 \subsection*{Editorial and Review Activities}
-Journal Refereeing: \emph{Algebra and Number Theory}, \emph{International Journal of Number Theory}, \emph{Journal of Number Theory}, \emph{Math Reviews}, \emph{Journal für die reine und angewandte Mathematik (Crelle’s Journal)}, \emph{Journal of Commutative Algebra}, \emph{International Mathematics Research Notices}, \emph{Manuscripta Mathematica}, \emph{}
+Journal Refereeing: \emph{Algebra and Number Theory}, \emph{International Journal of Number Theory}, \emph{Journal of Number Theory}, \emph{Math Reviews}, \emph{Bulletin of the London Mathematical Society},  \emph{Journal für die reine und angewandte Mathematik (Crelle’s Journal)}, \emph{Journal of Commutative Algebra}, \emph{International Mathematics Research Notices}, \emph{Manuscripta Mathematica}, \emph{}
 
 \section*{Advising/Mentoring}
 \begin{enumerate}
@@ -312,28 +327,49 @@ Journal Refereeing: \emph{Algebra and Number Theory}, \emph{International Journa
 		MSC03 2150\\
 		1 University of New Mexico\\
 		Albuquerque, New Mexico, 87131-0001\\
-		buium@math.unm.edu
-	\end{flushleft}
-	\begin{flushleft}
+		buium@math.unm.edu\\ \ \\
+	
 		Kiran Kedlaya\\
 		Department of Mathematics\\
 		University of California, San Diego\\
 		9500 Gilman Drive, \#0112\\
 		La Jolla, California, 92093-0112\\
-		kedlaya@ucsd.edu
-	\end{flushleft}
+		kedlaya@ucsd.edu \\ \ \\
+		
+		Puck Romback \\
+		University of Vermont \\
+		Department of Mathematics and Statistics \\
+		82 University Place, Burlington, VT, 05401  \\ \ \\
+
+\end{flushleft}
+
+\begin{flushleft}
+	Thomas Scanlon\\
+Department of Mathematics\\
+University of California, Berkeley\\
+970 Evans Hall\\
+Berkeley, California, 94720-3840\\
+tws@berkeley.edu \\ \ \\
+
+
+	Ravi Vakil\\
+	Department of Mathematics\\
+	450 Jane Stanford Way\\
+	Building 380\\
+	Stanford, CA 94305-2125\\ \ \\
+
+	David Zureick-Brown \\
+	Amherst College \\
+	202 Seeley Mudd Building\\
+	31 Quadrangle\\
+	Amherst, MA 01002\\ \ \\ \ \\ \ \\
+\end{flushleft}
+
+
 \end{multicols}
 
 
-\iffalse 
-\begin{center}
-	Thomas Scanlon\\
-	Department of Mathematics\\
-	University of California, Berkeley\\
-	970 Evans Hall\\
-	Berkeley, California, 94720-3840\\
-	tws@berkeley.edu 
-\end{center}
-\fi 
+
+
 
 \end{document}
