@@ -8,3 +8,20 @@
 # Gas City
 .beads/*
 !.beads/identity.toml
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.brf
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Machine-local agent/session artifacts -- never publish to this public repo
+.beads.gate.lock
+*.skill
+CV_UPDATE_INSTRUCTIONS.md
